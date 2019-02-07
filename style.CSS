@@ -230,32 +230,6 @@ a{
     height: 28px;
     background: url(image/icons.png) -461px -530px no-repeat;
 }
-/* .headercontent .search .search-correlation{
-    display: none;
-    border:1px solid #e5e9ef;
-    margin-top: 2px;
-    background-color: #fff;
-    z-index: 91;
-    border-radius: 4px;
-    padding-bottom: 5px;
-    font-size: 12px;
-    position: relative;
-}
-.search .search-correlation .kw{
-    border-top: 1px solid #e5e9ef;
-    position: relative;
-    height: 10px;
-    margin: 10px 10px 0;
-}
-.search .search-correlation .correlation-item{
-    margin: 6px 10px;
-    cursor: pointer;
-    word-wrap: break-word;
-    word-break: break-all;
-    display: block;
-    color: #222;
-    position: relative; 
-} */
 .headercontent .search .search-gart{
     position: absolute;
     top: 2px;
@@ -276,20 +250,8 @@ a{
 .headercontent .search .search-gart:hover{
     background-color: hsl(0,0%,100%);
 }
-/* .search span{
-    left: 2px;
-    top: 2px;
-    height: 32px;
-    line-height: 32px;
-    width: 68px;
-    padding-left: 26px;
-    bottom: 20px;
-    right: 270px;
-    background: url(image/icons.png) no-repeat -659px -655px;
-    color: #f25d8e;
-    font-size: 12px;
-    line-height: 32px;
-} */
+
+/* 搜索引导目录 */
 .wraper{
     width: 1160px;
     margin: 0 auto;
@@ -309,6 +271,7 @@ a{
     margin-right: 14px;
     font-size: 12px;
     color: #222;
+    position: relative;
 }
 .wraper .shouye{
     float: left;
@@ -320,11 +283,14 @@ a{
     background: url(image/icons.png) -660px -1170px no-repeat !important;
 }
 .wraper .wraper-item .item-top{
-    padding-top: 8px;
+    padding-top: 8px; 
 }
-.wraper .wraper-item span{
-    display: inline-block;
-    vertical-align: top;
+.wraper .wraper-item>a{
+    display: block;
+    text-align: center;
+}
+.wraper .wraper-item .item-top span{
+    display: block;
     font-size: 12px;
     transform: scale(.85);
     color: #fff;
@@ -335,6 +301,59 @@ a{
     max-width: 28px;
     padding: 1px 3px;
     font-family: sans-serif,sans-serifsans-serif,Calibri,Arial,Helvetica;
+    text-align: center;
+}
+.wraper .wraper-item:hover .wraper-item-li{
+    display: block;
+}
+.wraper .wraper-item > .wraper-item-li{
+    position: absolute;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.16);
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+    display: none;
+}
+.wraper .wraper-item > .wraper-item-li > li{
+    line-height: 20px;
+    min-width: 120px;
+    text-align: left;
+    transition: all .2s;
+    font-size: 10px;
+}
+.wraper .wraper-item > .wraper-item-li li a{
+    display: block;
+    position: relative;
+    padding: 5px 15px 5px 25px;
+    white-space: nowrap;
+    background: url(image/icons2.png) no-repeat 12px -1613px;
+    transition: all .2s;
+    margin-right: 10px;
+    left: 0px;
+}
+.wraper .wraper-item > .wraper-item-li > li a span{
+    position: relative;
+}
+.wraper .wraper-item > .wraper-item-li > li span::after{
+    content: "";
+    background: url(image/icons2.png) no-repeat  0 -1581px;
+    position: absolute;
+    width: 15px;
+    display: block;
+    height: 18px;
+    right: -100px;
+    transition: all .2s;
+    top: -3px;
+}
+.wraper .wraper-item > .wraper-item-li > li:hover{
+    background-color: #e5e9ef;
+}
+.wraper .wraper-item > .wraper-item-li > li:hover a{
+    left: 5px;
+}
+.wraper .wraper-item > .wraper-item-li > li:hover span::after{
+    right: -21px;
 }
 .primary-menu .nav-li{
     margin: 0 2px;
